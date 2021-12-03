@@ -1,0 +1,32 @@
+$baseColor: #eeeeee
+
+body
+	background-color: $baseColor
+
+.nav
+	background-color: $baseColor
+	& &__li
+		color: #000
+	& &__link
+		color: blue
+		&--active
+			color: red
+
+
+
+
+.blog-tabs
+	background-color: $baseColor
+	& &__li
+		color: #000
+	& &__link
+		color: blue
+		&--active
+			color: red
+
+
+@for $i from 1 to 9
+	$side: $i * 10
+	.mt-#{$side}
+		margin-top: #{$side}px
+  
